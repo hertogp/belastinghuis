@@ -1,0 +1,36 @@
+# .gitignore
+
+# intermediate files
+*.py[cod]
+*.so
+*.swp
+_notes.md
+parser.out
+parsetab.py
+
+## Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# directories
+.cache
+scr/
+tmp/
+venv/
+pd-images/
+v4/
+v5/
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+__pycache__
+
