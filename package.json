@@ -21,6 +21,7 @@
   "homepage": "https://github.com/hertogp/belastinghuis#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^4.0.2",

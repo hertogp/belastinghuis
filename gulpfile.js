@@ -57,6 +57,7 @@ gulp.task('minify', function(){
 
 
 // default Task(s)
+// - TODO: add a clearDist command to clear dist/build folder
 
 gulp.task('default', ['copyHtml', 'imageMin', 'sass', 'minify']);
 
