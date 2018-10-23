@@ -4,23 +4,25 @@
 *.py[cod]
 *.so
 *.swp
-_notes.md
-parser.out
-parsetab.py
 
-## Unit test / coverage reports
+# private files not under git control
+_notes.md
+
+# Unit test / coverage reports
 .coverage
 .tox
 nosetests.xml
+
+# ignore build/output directory
+dist/
 
 # directories
 .cache
 scr/
 tmp/
 venv/
-pd-images/
-v4/
-v5/
+node_modules/
+
 # Packages
 *.egg
 *.egg-info

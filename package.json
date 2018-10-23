@@ -1,0 +1,29 @@
+{
+  "name": "belastinghuis",
+  "version": "0.1.0",
+  "description": "mobile-first responsive small website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hertogp/belastinghuis.git"
+  },
+  "keywords": [
+    "belastinghuis"
+  ],
+  "author": "dw.ark design",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hertogp/belastinghuis/issues"
+  },
+  "homepage": "https://github.com/hertogp/belastinghuis#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
