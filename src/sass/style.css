@@ -43,6 +43,7 @@ img {
   /* remove image save-as & prevent dragging etc.. */
   pointer-events: none;
 }
+
 h1, h2, h3 {
   margin: 0;
   padding: 2rem 1rem 1rem 1rem;

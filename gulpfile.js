@@ -14,29 +14,37 @@ const autoprefix = require('gulp-autoprefixer');
  * Run gulp watch from root dir and off you go
  * */
 
+
 // copy all HTML files
+
 gulp.task('copyHtml', function(){
     gulp.src('src/*.html')
         .pipe(gulp.dest('dist'));
 });
 
-// optimize Images
+
+// copy pdf
+
+gulp.task('copyPdf', function() {
+    gulp.src('src/pdf/*')
+        .pipe(gulp.dest('dist/pdf'));
+
+});
+
+
+// optimize images
+
 gulp.task('imageMin', () =>
-    gulp.src('src/img/*')
+    gulp.src(['src/img/*.jpeg', 'src/img/*.png'])
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 );
 
-// minify JS
-gulp.task('minify', function(){
-    gulp.src('src/js/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
-});
 
 // Compile SASS
+
 gulp.task('sass', function(){
-    gulp.src('src/sass/*.scss')
+    gulp.src('src/sass/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefix({
             browsers: ['last 2 versions'],
@@ -48,6 +56,7 @@ gulp.task('sass', function(){
 
 
 // Minify JavaScript(s), if any
+
 gulp.task('minify', function(){
     gulp.src('src/js/*.js')
     .pipe(concat('main.js'))
@@ -59,7 +68,7 @@ gulp.task('minify', function(){
 // default Task(s)
 // - TODO: add a clearDist command to clear dist/build folder
 
-gulp.task('default', ['copyHtml', 'imageMin', 'sass', 'minify']);
+gulp.task('default', ['copyHtml', 'copyPdf', 'imageMin', 'sass', 'minify']);
 
 gulp.task('watch', function(){
     gulp.watch('src/js/*.js', ['minify']);

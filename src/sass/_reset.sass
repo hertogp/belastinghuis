@@ -1,0 +1,66 @@
+// Adaption of SASS reset which is based off of
+//http://meyerweb.com/eric/tools/css/reset/
+// https://framagit.org/podlibre/bulma/blob/5384d1531f4787466da57d0035452566fd0fdd75/bulma/utilities/reset.sass
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font-weight: normal
+  font: inherit
+  vertical-align: baseline
+  background: transparent
+
+
+// HTML5 display-role reset for old browsers
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section
+  display: block
+
+// Handle box-sizing while better addressing child elements:
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+body
+  line-height: 1
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  text-decoration: none
+
+
+ol, ul
+  list-style: none
+
+blockquote,
+q
+  quotes: none
+
+blockquote
+  &:before,
+  &:after
+    content: '';
+    content: none;
+
+q
+  &:before,
+  &:after
+    content: '';
+    content: none;
+
+table
+  border-collapse: collapse;
+  border-spacing: 0;
